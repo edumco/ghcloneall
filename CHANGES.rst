@@ -2,11 +2,18 @@ Changelog
 =========
 
 
-1.9.3 (unreleased)
-------------------
+1.10.1 (unreleased)
+-------------------
 
+- Nothing changed yet.
+
+
+1.10.0 (2021-04-10)
+-------------------
+
+- Allow authentication with GitHub token.
+- Depend on requests-cache < 0.6 on Python 2.7.
 - Add support for Python 3.9.
-
 - Drop support for Python 3.5.
 
 

@@ -28,6 +28,7 @@ setup(
     url=metadata['__url__'],
     description='Clone/update all user/organization GitHub repositories',
     long_description=long_description,
+    long_description_content_type='text/x-rst',
     keywords='github git clone automation',
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -47,13 +48,10 @@ setup(
     py_modules=['ghcloneall'],
     install_requires=[
         'requests',
-        'requests_cache',
+        'requests_cache < 0.6; python_version=="2.7"',
+        'requests_cache; python_version!="2.7"',
+        'futures; python_version=="2.7"',
     ],
-    extras_require={
-        ':python_version=="2.7"': [
-            'futures',
-        ],
-    },
     entry_points={
         'console_scripts': [
             'ghcloneall = ghcloneall:main',
