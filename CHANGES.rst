@@ -2,10 +2,18 @@ Changelog
 =========
 
 
-1.10.1 (unreleased)
+1.10.2 (unreleased)
 -------------------
 
 - Nothing changed yet.
+
+
+1.10.1 (2021-05-26)
+-------------------
+
+- When determining if a repository is dirty, use the repository's
+  configured default branch from GitHub instead of assuming that the
+  default is "master".
 
 
 1.10.0 (2021-04-10)
